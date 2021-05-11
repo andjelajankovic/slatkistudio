@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Montserrat:wght@100;200;400&display=swap');
+:root {
+    --violet: #7d2b8c;  /* rgb(125, 43, 140) */
+    --gold: #dbc071;  /* rgb(219, 192, 113) */
+    --white: #fff;
+    --black: #000;
+    --lightgray: #f2f2f2;
+    --headings: 'Clicker Script', cursive;
+    --bodyFont: 'Montserrat', sans-serif;
+    --fontColor: #333;
+    --transition: .4s ease;
+}
+body {
+    font-family: var(--bodyFont);
+    color: var(--fontColor);
+}
+h1,h2,h3,h4, h5 {
+    font-family: var(--headings)
+}
+.py-5{
+    padding: 100px 0; !important
+}
+.headers {
+    background-image: linear-gradient(rgba(219, 192, 113,.7), rgba(255,255,255,.99)), url(img/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.headers h1{
+    background: rgb(125, 43, 140,.7);
+}
+.btn {
+    background: linear-gradient(45deg, var(--violet), var(--gold));
+    font-size: 1rem;
+    color: var(--white);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+}
+.btn:hover {
+    background: linear-gradient(45deg, var(--gold), var(--violet));
+    color: var(--white);
+}
+/***********************
+navbar
+***********************/
+.navbar-brand img{
+    width: 150px;
+}
+.nav-link{
+    text-transform: uppercase;
+}
+.stickyAdd{
+    background: rgb(125, 43, 140,.8);
+    padding: 5px 0;
+    box-shadow: 0 1px 10px 5px rgba(0,0,0.2);
+    transition-duration: .5s;
+}
+/***********************
+header
+***********************/
+.mainHeader{
+    background-image: linear-gradient(rgb(219, 192, 113,.7), rgb(219, 192, 113,.99)), url(img/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.mainHeader h1{
+    background: rgb(125, 43, 140,.7);
+}
+/***********************
+uvod
+***********************/
+.uvod img{
+    box-shadow: 0 0 20px #acacac;
+}
+/***********************
+najboljaTorta
+***********************/
+.najboljaTorta{
+    background-image:linear-gradient(45deg, rgb(125, 43, 140,.98),rgb(219, 192, 113,.98)), url(img/tortica-bg1.png);
+    
+}
+.najboljaTorta img{
+    width: 20%;
+}
+/***********************
+slider
+***********************/
+.slider img{
+    width: 30%;
+    
+}
+/***********************
+footer
+***********************/
+footer{
+    background: var(--gold);
+}
+footer h3{
+    font-size: 2.5rem;
+}
+footer h3::after{
+    height: 2px;
+    width: 50px;
+    content: "";
+    display: block;
+    background: var(--black);
+    margin: 20px 0;
+}
+footer a{
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+footer a:hover{
+    color: var(--violet);
+    transition: var(--transition);
+}
+/***********************
+post
+***********************/
+.featured-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px #afafaf;
+}
+.meta {
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, var(--violet), var(--gold));
+    border-image-slice: 1;
+    display: inline-block;
+    padding: 3px 15px;
+}
+.post h3 {
+    color: var(--violet);
+    font-size: 2rem;
+}
+.widget {
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, var(--violet), var(--gold));
+    border-image-slice: 1;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.widget:first-child{
+    background: linear-gradient(45deg, var(--violet), var(--gold)); 
+}
+.widget ul {
+    padding: 0;
+}
+.widget ul li {
+    list-style: none;
+}
+.widget ul li a {
+    color: var(--fontColor);
+}
+.widget ul li a:hover {
+    color: var(--violet);
+}
+.widget h3 {
+    color: var(--violet);
+    font-size: 2rem;
+}
+.proizvodi h3{
+    font-size: 2rem;
+    color: var(--violet);
+    margin-top: 30px;
+}
+.proizvodi .featured-image img{
+    border: 3px solid white;
+    border-radius: 5px;
+}
+.proizvodi .featured-image img:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
